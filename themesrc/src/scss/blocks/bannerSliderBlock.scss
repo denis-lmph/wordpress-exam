@@ -1,0 +1,164 @@
+// ============== banner slider block ==============
+
+.banner-slider-section {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.banner-slider {
+  width: 100%;
+}
+
+.banner-slider-item {
+  width: 100%;
+  padding: 60px 30px;
+
+  &__content {
+    max-width: 1170px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__image-wrapper {
+    // Styles for the image wrapper
+  }
+
+  &__image {
+    // Styles for the banner image
+    width: 100%;
+   // max-height: 800px;
+    object-fit: cover;
+  }
+
+  &__text-wrapper {
+    // Styles for the text wrapper
+    padding: 20px 30px;
+    text-align: center;
+  }
+
+  &__title {
+    // Styles for the title
+    color: $primary;
+  }
+
+  &__button-wrapper {
+    // Styles for the button wrapper
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 780px;
+  }
+
+  .button {
+    // Styles for the buttons
+
+    &--gradient {
+      // Styles for the gradient button modifier
+    }
+
+    &--dark-blue {
+      // Styles for the dark blue button modifier
+    }
+  }
+}
+
+// ============== MEDIA QUERIES ==============
+
+// ============== MEDIA QUERIES ==============
+@media only screen and (min-width: 769px) {
+  .banner-slider-item {
+    &__image {
+      // Styles for the banner image
+      height: 500px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .banner-slider-item {
+    &__image {
+      // Styles for the banner image
+      height: 600px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .banner-slider-item {
+    &__content {
+      max-width: 1400px;
+    }
+
+    &__image {
+      // Styles for the banner image
+      height: 820px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner-slider-item {
+    padding: 25px 30px;
+
+    &__image {
+      // Styles for the banner image
+      height: 380px;
+    }
+
+    &__text-wrapper {
+      // Styles for the text wrapper
+      padding: 10px 22px;
+      margin-bottom: 30px;
+    }
+    &__title {
+      // Styles for the title
+      text-align: center;
+    }
+
+    &__button-wrapper {
+      // Styles for the button wrapper
+
+      flex-direction: column;
+    }
+    .button {
+      // Styles for the buttons
+
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px !important;
+      &--gradient {
+        // Styles for the gradient button modifier
+      }
+
+      &--dark-blue {
+        // Styles for the dark blue button modifier
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 661px) {
+  .banner-slider-item {
+    &__image {
+      // Styles for the banner image
+      height: 300px;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .banner-slider-item {
+    &__image {
+      // Styles for the banner image
+      height: 230px;
+    }
+  }
+}

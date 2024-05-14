@@ -1,0 +1,102 @@
+//======== Cards Rounded Image Block =========
+.cards-rounded-image {
+    background-color: $white;
+  
+   .content {
+      padding: 100px 30px;
+    }
+  
+    &__heading-wrapper {
+      margin-bottom: 40px;
+    }
+    &__heading {
+      text-align: center;
+    }
+  
+    .card-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      text-align: center;
+  
+      .content {
+        padding: 0px 40px;
+      }
+  
+      &__images {
+        margin-bottom: 24px;
+        width: 162px;
+        height: 162px;
+        border-radius: 50%;
+      }
+    }
+  
+    h2,
+    h3,
+    h4,
+    p {
+      color: $primary;
+      margin-bottom: 24px;
+    }
+  }
+  
+  // ============== MEDIA QUERIES ==============
+  
+  @media only screen and (min-width: 768px) {
+  }
+  
+  @media only screen and (min-width: 1366px) {
+    .cards-rounded-image {
+      .content {
+        padding: 140px 0px;
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 1600px) {
+    .cards-rounded-image {
+      .content {
+        // padding: 140px 0px;
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 1980px) {
+    .cards-rounded-image {
+      .content {
+        padding: 180px 0px;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .cards-rounded-image {
+      .content {
+        padding: 90px 30px;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .cards-rounded-image {
+      .content {
+        padding: 60px 30px;
+      }
+  
+      .card-item {
+        .content {
+          padding: 0px 0px;
+        }
+      }
+  
+      h2,
+      h3,
+      h4,
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  

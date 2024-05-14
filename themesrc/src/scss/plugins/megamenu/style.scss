@@ -1,0 +1,226 @@
+#mega-menu-wrap-main-menu {
+    width: 100%;
+}
+
+#mega-menu-wrap-main-menu #mega-menu-main-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: auto;
+}
+
+#mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item>a.mega-menu-link {
+    padding: 10px 0px 22px 0px;
+}
+
+#mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item>a.mega-menu-link {
+    color: $primary;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    height: auto;
+}
+
+#mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item.mega-toggle-on>a.mega-menu-link {
+    background: $white;
+    color: $primary;
+}
+
+#mega-menu-wrap-main-menu .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner,
+#mega-menu-wrap-main-menu .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner::before,
+#mega-menu-wrap-main-menu .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-animated-inner::after {
+    background-color: $primary;
+}
+
+/** Mobile **/
+.mega-toggle-blocks-left,
+.mega-toggle-blocks-center {
+    display: none !important;
+}
+
+#mega-menu-wrap-main-menu .mega-menu-toggle {
+    background: transparent;
+    position: absolute;
+    width: 40px;
+    right: -0px;
+    top: -35px;
+    z-index: 3;
+}
+
+#mega-menu-wrap-main-menu .mega-menu-toggle .mega-toggle-blocks-left,
+#mega-menu-wrap-main-menu .mega-menu-toggle .mega-toggle-blocks-center {
+    display: none !important;
+}
+
+button.mega-toggle-animated.mega-toggle-animated-slider {
+    min-width: unset;
+}
+
+#mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item>a.mega-menu-link {
+    text-align: center;
+}
+
+#mega-menu-wrap-main-menu .card-with-link {
+    text-align: center;
+    display: block;
+}
+
+#mega-menu-wrap-main-menu .card-with-link p,
+#mega-menu-wrap-main-menu a.mega-link {
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    color: $primary;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Geom Graphic";
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+// current active menu 
+#mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item.mega-current-menu-item>a.mega-menu-link,
+#mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item.mega-current-menu-ancestor>a.mega-menu-link,
+#mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item.mega-current-page-ancestor>a.mega-menu-link {
+    background: $white;
+    color: $primary;
+    font-weight: 500;
+    text-decoration: none;
+    // border-bottom: 2px solid #04ff87;
+    padding: 10px 0px 20px 0px;
+}
+
+@media only screen and (min-width: 769px) {
+    #mega-menu-wrap-main-menu {
+        background: $white;
+    }
+
+    #mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item>a.mega-menu-link {
+        min-width: 110px;
+    }
+
+    // current active menu 
+    #mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item.mega-current-menu-item>a.mega-menu-link,
+    #mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item.mega-current-menu-ancestor>a.mega-menu-link,
+    #mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item.mega-current-page-ancestor>a.mega-menu-link {
+        border-bottom: 2px solid #04ff87;
+    }
+
+    #mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item>a.mega-menu-link:hover,
+    #mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item>a.mega-menu-link:focus {
+        background: $white;
+        color: $primary;
+    }
+
+    #mega-menu-wrap-main-menu #mega-menu-main-menu[data-effect="fade_up"] li.mega-menu-item.mega-menu-megamenu>ul.mega-sub-menu,
+    #mega-menu-wrap-main-menu #mega-menu-main-menu[data-effect="fade_up"] li.mega-menu-item.mega-menu-flyout ul.mega-sub-menu {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) !important;
+        width: 100vw;
+        background-color: #f8f9fa !important;
+        padding: 30px 0 30px 0;
+        margin-top: 0px;
+        // background: rgba(230, 233, 234, 0.20);
+        box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.05);
+    }
+
+    #mega-menu-wrap-main-menu #mega-menu-main-menu[data-effect="fade_up"] li.mega-menu-item.mega-menu-megamenu>ul.mega-sub-menu>li.mega-menu-row,
+    #mega-menu-wrap-main-menu #mega-menu-main-menu[data-effect="fade_up"] li.mega-menu-item.mega-menu-flyout ul.mega-sub-menu li.mega-menu-row {
+        max-width: 720px;
+        margin: auto;
+        float: unset;
+    }
+
+    #mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item.mega-toggle-on>a.mega-menu-link {
+        padding: 10px 0px 20px 0px;
+        border-bottom: 2px solid #04ff87;
+    }
+
+    #mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item>a.mega-menu-link:hover,
+    #mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item>a.mega-menu-link:focus {
+        font-weight: 500;
+        padding: 10px 0px 20px 0px;
+        border-bottom: 2px solid #04ff87;
+    }
+}
+
+@media (min-width: 992px) {
+
+    #mega-menu-wrap-main-menu #mega-menu-main-menu[data-effect="fade_up"] li.mega-menu-item.mega-menu-megamenu>ul.mega-sub-menu>li.mega-menu-row,
+    #mega-menu-wrap-main-menu #mega-menu-main-menu[data-effect="fade_up"] li.mega-menu-item.mega-menu-flyout ul.mega-sub-menu li.mega-menu-row {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    #mega-menu-wrap-main-menu #mega-menu-main-menu[data-effect="fade_up"] li.mega-menu-item.mega-menu-megamenu>ul.mega-sub-menu>li.mega-menu-row,
+    #mega-menu-wrap-main-menu #mega-menu-main-menu[data-effect="fade_up"] li.mega-menu-item.mega-menu-flyout ul.mega-sub-menu li.mega-menu-row {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    #mega-menu-wrap-main-menu #mega-menu-main-menu[data-effect="fade_up"] li.mega-menu-item.mega-menu-megamenu>ul.mega-sub-menu>li.mega-menu-row,
+    #mega-menu-wrap-main-menu #mega-menu-main-menu[data-effect="fade_up"] li.mega-menu-item.mega-menu-flyout ul.mega-sub-menu li.mega-menu-row {
+        max-width: 1320px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #mega-menu-wrap-main-menu .mega-menu-toggle+#mega-menu-main-menu {
+        padding-top: 30px;
+        background: $white;
+    }
+
+    #mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item>a.mega-menu-link {
+        padding: 10px 0px 10px 0px;
+    }
+
+    #mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item {
+        padding: 10px 0;
+    }
+
+    #mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item:not(:last-child) {
+        border-bottom: 1px solid $primary;
+    }
+
+    #mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item.mega-current-menu-item:not(:last-child) {
+        border-bottom: 1px solid #04ff87;
+    }
+
+    #mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item.mega-current-menu-item>a.mega-menu-link,
+    #mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item.mega-current-menu-ancestor>a.mega-menu-link,
+    #mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item.mega-current-page-ancestor>a.mega-menu-link {
+      //  color: #04ff87;
+    }
+
+    #mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-megamenu>ul.mega-sub-menu {
+        margin-top: 10px;
+        background-color: #f8f9fa;
+    }
+
+    #mega-menu-wrap-main-menu #mega-menu-main-menu li.mega-menu-item-has-children>a.mega-menu-link>span.mega-indicator:after {
+        content: '\f10f' !important;
+    }
+
+    #mega-menu-wrap-main-menu #mega-menu-main-menu li.mega-menu-item-has-children.mega-toggle-on>a.mega-menu-link>span.mega-indicator:after {
+        content: '\f14f' !important;
+    }
+
+    #mega-menu-wrap-main-menu #mega-menu-main-menu li.mega-menu-item-has-children>a.mega-menu-link>span.mega-indicator {
+        font-size: 24px;
+        font-size: 24px;
+        position: absolute;
+        right: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {}
+
+@media (min-width: 768px) and (max-width: 1199px) {}

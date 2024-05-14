@@ -1,0 +1,155 @@
+//======== GET STARTED =========
+.get-started-block {
+  background-color: $white;
+  padding: 100px 0;
+  .container {
+    .getstarted {
+      .section-subtitle {
+        h2 {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 14px;
+          line-height: 18px;
+          font-weight: 600;
+          color: $secondary; 
+          text-transform: uppercase;
+          padding-bottom: 10px;
+        }
+      }
+      .section-header {
+        padding-bottom: 50px;
+        h2 {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 35px;
+          line-height: 45px;
+          text-transform: capitalize;
+        }
+      }
+      .getstarted-content {
+        padding-bottom: 50px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+      }
+      // form section
+      .getstarted-form {
+        .gfield_description {
+          display: flex;
+        }
+        .gfield_required {
+          display: none;
+        }
+        .gfield_select {
+          border: 1px solid $purple;
+          border-radius: 10px;
+        }
+        .name_first {
+          padding-right: 0;
+        }
+
+        .quoteCanvas-page-pad {
+          select {
+            border: 1px solid $purple;
+            border-radius: 10px;
+          }
+        }
+
+        .quoteCanvas-page-pad {
+          .mb-12 {
+            h2 {
+              font-family: 'Montserrat', sans-serif;
+              font-size: 14px;
+              line-height: 18px;
+              font-weight: 600;
+              color: $secondary;
+              text-transform: uppercase;
+              padding-bottom: 10px;
+            }
+          }
+        }
+
+        #quotient-lead-form {
+
+          body {
+            background-color: $purple;
+          }
+        }
+
+        // get started form
+        #quotient-lead-form {
+          body .qCustomCss,
+          body .qCustomCss textarea,
+          body .qCustomCss select,
+          body .qCustomCss input,
+          body .qCustomCss label {
+            font-family: 'Montserrat', sans-serif;
+          }
+          .f-bold input,
+          .f-bold select,
+          .f-bold textarea {
+            border: 1px solid $purple;
+            border-radius: 10px;
+          }
+        }
+      }
+      // end form section
+    }
+  }
+  .ginput_container_consent label {
+    justify-self: flex-end;
+    padding-left: 10px;
+    position: relative;
+    top: 13px;
+  }
+
+  .ginput_container_consent {
+    display: flex;
+    justify-content: space-between;
+    label {
+      justify-self: flex-start;
+    }
+  }
+  .gfield_consent_label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+  }
+
+  #input_7_11_1 {
+    justify-self: flex-start !important;
+  }
+
+  .gform_wrapper.gravity-theme input[type='text'] {
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .get-started-block {
+    .container {
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .get-started-block {
+    padding: 50px 0;
+    .container {
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .get-started-block {
+    .container {
+      .getstarted {
+        max-width: 770px;
+        margin: auto;
+      }
+    }
+  }
+}

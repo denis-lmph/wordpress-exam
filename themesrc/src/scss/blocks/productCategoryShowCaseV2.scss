@@ -1,0 +1,122 @@
+//======== Cards Rounded Image =========
+.product-category-showcase-v2-section {
+    background-color: $white ;
+  
+    .content {
+        padding: 80px 30px 80px 30px;
+
+        .product-cat-card-item{
+                .product-cat-card-item-wrapper{
+                    width: 100%;
+                    // overflow: hidden;
+                    position: relative;
+                    text-align: center;
+                    padding: 0px 10px;
+                    margin-bottom: 60px;
+           
+                    .product-cat-card-images{
+                        width: 100%;
+                        height: 100%;
+                        -o-object-fit: cover;
+                        object-fit: cover;
+                        position: relative;
+                        max-height: 162px;
+                        max-width: 162px;
+                        border-radius: 50%;
+                    }
+
+                    .product-cat-card-item-content{
+                        position: relative;
+                        .button-wrapper{
+                            .btn-browse{
+                                margin: auto;
+                            }
+                        }
+                    }
+            }
+        }
+    }
+  
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    img {
+        margin-bottom: 19px;
+    }
+  
+    h1,
+    h2,
+    h3,
+    h4,
+    p{
+        color: $primary;
+    }
+  
+    h4.product-cat-card-title{
+        font-family: "Geom Graphic", serif;
+        font-size: 16px;
+    }
+  }
+  
+  // ============== MEDIA QUERIES ==============
+  
+  @media only screen and (min-width: 768px) {
+  
+  
+  }
+  
+  @media only screen and (min-width: 1366px) {
+  
+      .product-category-showcase-v2-section {
+          .content {
+            padding: 80px 0px 40px 0px;
+          }
+      }
+  
+  }
+  
+  @media only screen and (min-width: 1600px) {
+      .product-category-showcase-v2-section {
+          .content {
+              // padding: 140px 0px;
+          }
+      }
+    }
+  
+    
+  @media only screen and (min-width: 1980px) {
+    .product-category-showcase-v2-section {
+        .content {
+            // padding: 80px 30px 10px 30px
+        }
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .product-category-showcase-v2-section {
+        .content {
+            padding: 40px 30px 20px 30px;
+            .heading{
+                text-align: center;
+              }
+            .product-cat-card-item{
+                .product-cat-card-item-wrapper{         
+                    margin-bottom: 36px;
+                }
+            }
+        }
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .product-category-showcase-v2-section {
+        .content {
+            padding: 40px 30px 20px 30px;
+            .product-cat-card-item {
+     
+            }
+        }
+    }
+  }

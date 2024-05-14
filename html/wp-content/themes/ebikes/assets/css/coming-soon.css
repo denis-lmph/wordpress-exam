@@ -1,0 +1,174 @@
+/** For Coming Soon Only */
+body,
+html {
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+figure {
+	margin: 0;
+}
+
+.logo {
+	height: 33px;
+}
+
+.logo__img {
+	height: 100%;
+	width: 100%;
+	max-width: 305px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figure.social {
+	position: absolute;
+	top: 0;
+	right: 110px;
+}
+
+#coming-soon-video {
+	background: #C4C4C4;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%
+}
+
+.content--wrapper {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #26262663;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	max-width: 1270px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	color: #fff;
+}
+
+.content__header {
+	position: relative;
+	/* margin-top: 80px; */
+}
+
+.content__footer {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	/* margin-bottom: 90px; */
+}
+
+.gf-form-block {
+	display: block;
+	width: 100%;
+}
+
+/** Gravity Forms **/
+#gform_wrapper_1 label.gfield_label.gform-field-label,
+#gform_wrapper_1 h2.gform_title {
+	display: none;
+}
+
+#gform_wrapper_1 input#input_1_1 {
+	padding: 12px 26px;
+	text-align: left;
+	background: #FFFFFF;
+	border-radius: 50px;
+	border: none;
+	width: 80%;
+}
+
+#gform_wrapper_1 input#gform_submit_button_1 {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding: 12px 26px;
+	background: linear-gradient(100.19deg, #04FF87 0.1%, #0000FF 154.59%);
+	border-radius: 50px;
+	border: none;
+	margin-top: 16px;
+	cursor: pointer ;
+}
+
+#gform_wrapper_1 .gfield .ginput_container,
+#gform_wrapper_1 .gfield .gfield_description,
+#gform_wrapper_1 div.ginput_complex label,
+#gform_wrapper_1 input:not([type='radio']):not([type='checkbox']):not([type='submit']),
+#gform_wrapper_1 select,
+#gform_wrapper_1 textarea {
+	text-align: center;
+}
+
+#gform_wrapper_1 .gform_footer,
+#gform_wrapper_1 .gform_page_footer {
+	text-align: center;
+}
+
+#gform_wrapper_1 h2.gform_submission_error.hide_summary {
+	font-size: 16px;
+	text-align: center;
+	display: none;
+}
+
+#gform_wrapper_1 div#validation_message_1_1 {
+	font-size: 14px;
+	margin-top: 10px;
+}
+#gform_wrapper_1 div#validation_message_1_1{
+	color: #ff5b5b;
+}
+#gform_wrapper_1  div#gform_confirmation_message_1 {
+    text-align: center;
+    margin-top: 16px;
+}
+
+/** Gravity Forms **/
+@media only screen and (min-width: 768px) {
+	.logo {
+		height: 64px;
+	}
+
+	#gform_wrapper_1 input#input_1_1 {
+		width: 525px;
+	}
+
+	input#gform_submit_button_1 {
+		width: 184px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	/* .content__header {
+		margin-top: 48px;
+	}
+
+	.content__footer {
+		margin-bottom: 80px;
+	} */
+
+	figure.social {
+		right: 20px;
+	}
+
+}

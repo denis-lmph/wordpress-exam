@@ -1,0 +1,137 @@
+.woocommerce-sidebar,
+.product-listing-section {
+    .wpfMainWrapper {
+        span.wpfValue {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        div.wpfFilterWrapper {
+            border-bottom: 1px solid $metallic-grey;
+        }
+
+        .wpfFilterWrapper .wfpTitle,
+        .wpfFilterWrapper .wpfFilterTaxNameWrapper {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .wpfFilterWrapper[data-filter-type="wpfPrice"] .wpfFilterContent:not(.wpfHide) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .wpfFilterWrapper[data-display-type="colors"] .wpfColorsFilterVer{
+            flex-wrap: wrap !important;
+            .wpfColorsCol {
+                // max-width: 40px !important;
+                flex: 0 0 calc(20% - 10px);
+           }
+        }
+        #wpfBlock_1 .wpfButtonsFilter{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+        .wpfFilterWrapper[data-display-type="colors"]{
+            .wpfColorsRow{
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                // justify-items: space-between;
+               // justify-content: space-between;
+                padding-left: 0;
+            }
+        }
+
+        button.wpfFilterButton.wpfButton {
+            // border: 2px solid $primary;
+            border-radius: 30px;
+            background: $primary;
+            font-family: "Work Sans", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            padding: 10px 30px;
+            width: 100%;
+            min-height: unset;
+            transition: 0.3s;
+            color: $white;
+            &:hover,
+            &:focus,
+            &:active {
+              background: $btn-primary-gradient;
+              color: $white;
+            }
+        }
+
+        button.wpfClearButton.wpfButton {
+            background: none;
+            font-family: "Work Sans", sans-serif;
+            font-weight: 500;
+            font-size: 12px;
+            text-transform: capitalize;
+        }
+
+        .wpfFilterWrapper .ui-slider-horizontal {
+            margin-top: 20px !important;
+            margin-bottom: 20px;
+            height: 2px;
+            border: 1px solid $metallic-grey;
+        }
+
+        .ui-slider-horizontal .ui-slider-handle {
+            top: -0.3em;
+            border-radius: 50%;
+            background: #000;
+            width: 10px;
+            height: 10px;
+            margin-left: 0;
+        }
+
+        .ui-slider.ui-widget-content .ui-slider-handle:hover,
+        .ui-slider.ui-widget-content .ui-slider-handle.ui-state-hover,
+        .ui-slider.ui-widget-content .ui-slider-handle.ui-state-active {
+            border-color: #000000 !important;
+        }
+
+        .wpfColorsColBlock input:checked ~ label.icon {
+            box-shadow: 0 0 0 1px #000;
+        }
+
+        .wpfColorsFilter input:checked + label.icon {
+            box-shadow: 0 0 0 1px #000;
+        }
+
+        .wpfColorsFilter input:checked+label.icon:before {
+            display: none;
+        }
+
+        // .wpfColorsFilter input:checked + label.icon:before {
+        //     content: '';
+        //     // font-family: FontAwesome !important;
+        //     margin-top: 0px;
+        //     margin-left: 0px;
+        //     height: 30px;
+        //     width: 30px;
+        //     border: 1px solid black;
+        //     display: block;
+        //     border-radius: 50%;
+        // }
+
+        .wpfFilterWrapper[data-filter-type="wpfPrice"] .wpfFilterContent{
+            padding-left: 0;
+        }
+        .wpfColorsFilterVer .wpfColorsCol .wpfColorsColBlock {
+            padding-top: 5px;
+            padding-left: 5px;
+        }
+
+        .wpfFilterButtons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+

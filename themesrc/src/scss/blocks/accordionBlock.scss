@@ -1,0 +1,115 @@
+//======== Accordion =========
+.accordion-block,
+.specification-block  {
+  .content {
+    padding: 60px 30px 60px 30px;
+
+  }
+  .accordion {
+
+    .accordion-body {
+      padding: 1rem 0px;
+    }
+
+    .accordion-item {
+      border: none;
+      color: $primary;
+      border-bottom: 1px solid $primary;
+
+      .accordion-button {
+        font-family: "Work Sans", sans-serif;
+        color: $primary;
+        font-weight: 700;
+        font-size: 14px;
+        padding: 1rem 0px;
+      }
+      .accordion-button::after {
+        background-image: url("/wp-content/themes/ebikes/assets/images/accordionPlus-2.png");
+        transition: unset !important;
+        transform:unset !important;
+      }
+      button:not(.collapsed)::after {
+        background-image: url("/wp-content/themes/ebikes/assets/images/accordionMinus.png");
+        transition: unset !important;
+        transform:unset !important;
+      }
+      button:not(.collapsed)::after button:not(.collapsed) button:focus {
+        color: $primary;
+        box-shadow: none;
+      }
+      .accordion-button:not(.collapsed) {
+        background-color: #ffffff00;
+        box-shadow: none;
+        padding-bottom: 0px !important;
+      }
+
+    }
+    .button:focus {
+      color: $primary;
+      border: none;
+    }
+
+    .accordion-item:last-of-type .accordion-button.collapsed,
+    .accordion-item:last-of-type .accordion-collapse,
+    .accordion-item:last-of-type{
+      border-bottom-right-radius:  0 !important;
+      border-bottom-left-radius: 0 !important;
+    }
+
+    .accordion-item:first-of-type {
+      border-top-left-radius: 0 !important;
+      border-top-right-radius: 0 !important;
+    }
+  }
+}
+
+.accordion-button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1366px) {
+  .accordion-block {
+    .content {
+      padding: 60px 0 60px 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .accordion-block {
+    .content {
+      // padding: 140px 0px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1980px) {
+  .accordion-block {
+    .content {
+      padding: 80px 0px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .accordion-block {
+    .content {
+      padding: 40px 30px 20px 30px;
+      .heading{
+        // text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .accordion-block {
+    .content {
+      padding: 20px 30px 20px 30px
+    }
+  }
+}

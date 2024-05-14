@@ -1,0 +1,111 @@
+//======== Default Heading Block =========
+.default-heading-block {
+  background-color: $white;
+
+  .content {
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 1170px;
+
+    .text-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      &.left {
+        text-align: left;
+        align-items: flex-start;
+      }
+    
+      &.center {
+        text-align: center;
+        align-items: center;
+      }
+    
+      &.right {
+        text-align: right;
+        align-items: flex-end;
+      }
+
+      .block-subheading {
+        margin-bottom: 7px;
+      }
+    
+      .block-heading {
+        margin-bottom: 38px;
+        max-width: 800px;
+    
+        &.heading-extra-margin {
+          margin-bottom: 75px;
+        }
+      }
+        
+      .body-text {
+        margin-bottom: 75px;
+    
+        &.heading-extra-margin {
+          margin-bottom: 50px;
+        }
+    
+        &.default-width {
+          max-width: 800px;
+        }
+
+        &.extra-width {
+          max-width: 860px;
+        }
+      } 
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  
+  .default-heading-block {
+    background-color: $white;
+  
+    .content {
+      padding-bottom: 0;
+      display: flex;
+      flex-direction: column;
+
+      .text-wrapper {
+        
+        &.left {
+          text-align: center;
+          align-items: center;
+        }
+      
+        &.center {
+          text-align: center;
+          align-items: center;
+        }
+      
+        &.right {
+          text-align: center;
+          align-items: center;
+        }
+  
+        .block-subheading {
+          margin-bottom: 7px;
+        }
+      
+        .block-heading {
+          margin-bottom: 25px;
+      
+          &.heading-extra-margin {
+            margin-bottom: 25px;
+          }
+        }
+          
+        .body-text {
+          margin-bottom: 30px;
+      
+          &.heading-extra-margin {
+            margin-bottom: 55px;
+          }
+        }
+      }
+    } 
+  }
+}

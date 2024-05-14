@@ -1,0 +1,24 @@
+body.single-product {
+    button#wc_bis_send_form,
+    input#wc_bis_email{
+        width: 100%;
+    }
+    input#wc_bis_email{
+    width: 100%;
+    padding: 5px 10px !important;
+    border-radius: 20px;
+    border: 1px solid #9BAAB9;
+    }
+
+    button#wc_bis_send_form {
+        background-color: $primary;
+        color: #fff;
+        transition: 0.3s;
+        &:hover,
+        &:focus,
+        &:active {
+            background: $btn-primary-gradient;
+            color: $white;
+        }
+    }
+}   

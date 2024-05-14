@@ -1,0 +1,99 @@
+// ============== home banner block ==============
+
+.home-banner {
+   .content {
+    // Styles for the content wrapper
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 60px 30px;
+  }
+
+  &__image-wrapper {
+    // Styles for the image wrapper
+  }
+
+  &__image {
+    // Styles for the banner image
+    width: 100%;
+  }
+
+  &__text-wrapper {
+    // Styles for the text wrapper
+    padding: 20px 30px;
+    text-align: center;
+  }
+
+  &__title {
+    // Styles for the title
+    color: $primary;
+  }
+
+  &__button-wrapper {
+    // Styles for the button wrapper
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 780px;
+  }
+
+  .button {
+    // Styles for the buttons
+
+    &--gradient {
+      // Styles for the gradient button modifier
+    }
+
+    &--dark-blue {
+      // Styles for the dark blue button modifier
+    }
+  }
+}
+
+// ============== MEDIA QUERIES ==============
+
+@media only screen and (max-width: 767px) {
+  .home-banner {
+    background-position: right;
+    background-size: auto 100%;
+
+     .content {
+      padding: 25px 30px;
+    }
+
+    &__text-wrapper {
+      // Styles for the text wrapper
+      padding: 10px 22px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    &__title {
+      // Styles for the title
+      text-align: center;
+    }
+
+    &__button-wrapper {
+      // Styles for the button wrapper
+
+      flex-direction: column;
+    }
+
+    .button {
+      // Styles for the buttons
+
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px !important;
+      &--gradient {
+        // Styles for the gradient button modifier
+      }
+
+      &--dark-blue {
+        // Styles for the dark blue button modifier
+      }
+    }
+  }
+}

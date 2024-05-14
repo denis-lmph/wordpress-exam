@@ -1,0 +1,85 @@
+<?php
+return [
+    'key' => 'group_6480332c5c062',
+    'title' => 'Instagram Feeds Block',
+    'fields' => array(
+        array(
+            'key' => 'field_6480332c5e34c',
+            'label' => 'Contents',
+            'name' => '',
+            'aria-label' => '',
+            'type' => 'tab',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'placement' => 'top',
+            'endpoint' => 0,
+        ),
+        array(
+            'key' => 'field_6480332c5e355',
+            'label' => 'Instagram Heading',
+            'name' => 'instagram_heading',
+            'aria-label' => '',
+            'type' => 'text',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'default_value' => '',
+            'maxlength' => '',
+            'placeholder' => '',
+            'prepend' => '',
+            'append' => '',
+        ),
+
+        array(
+            'key' => 'field_6480332c5e358',
+            'label' => 'Feeds Short Code',
+            'name' => 'feeds_short_code',
+            'aria-label' => '',
+            'type' => 'text',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'default_value' => '',
+            'maxlength' => '',
+            'placeholder' => '',
+            'prepend' => '',
+            'append' => '',
+        ),
+
+    ),
+    'location' => array(
+        array(
+            array(
+                'param' => 'block',
+                'operator' => '==',
+                'value' => 'acf/instagramfeedsblock',
+            ),
+        ),
+    ),
+    'menu_order' => 0,
+    'position' => 'normal',
+    'style' => 'default',
+    'label_placement' => 'top',
+    'instruction_placement' => 'label',
+    'hide_on_screen' => '',
+    'active' => true,
+    'description' => '',
+    'show_in_rest' => 0,
+
+];

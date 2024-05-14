@@ -1,0 +1,87 @@
+//======== Cards Rounded Image =========
+.instagram-feeds-block-section {
+  background-color: $white ;
+
+  .content {
+      padding: 30px 30px 60px 30px;
+
+      .heading-wrapper {
+        //   margin-bottom: 40px;
+
+          h2 {
+              text-align: center;
+          }
+      }
+
+
+  }
+
+  h2,
+  h3,
+  h4,
+  p {
+      color: $primary;
+      margin-bottom: 24px;
+  }
+
+  
+}
+
+// ============== MEDIA QUERIES ==============
+
+@media only screen and (min-width: 768px) {
+
+
+}
+
+@media only screen and (min-width: 1366px) {
+
+    .instagram-feeds-block-section {
+        .content {
+            padding: 30px 0px 80px 0px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1600px) {
+    .instagram-feeds-block-section {
+        .content {
+            // padding: 140px 0px;
+        }
+    }
+  }
+
+  
+@media only screen and (min-width: 1980px) {
+  .instagram-feeds-block-section {
+      .content {
+        //   padding: 30px 0px;
+      }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .instagram-feeds-block-section {
+      .content {
+          padding: 30px 30px;
+      }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .instagram-feeds-block-section {
+      .content {
+          padding: 60px 30px;
+     
+      }
+
+      h2,
+      h3,
+      h4,
+      p {
+          margin-bottom: 20px;
+      }
+
+  }
+}
