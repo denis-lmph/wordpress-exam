@@ -23,7 +23,6 @@ include_once 'inc/ebikes_cpt_loader.php';
 include_once 'inc/acf_pages.php';
 include_once 'inc/ebikes_menus.php';
 
-// include_once 'inc/cpt-portfolio.php';
 
 // Load ACF Gutenberg Blocks
 include_once 'inc/ebikes_blockloader.php';
@@ -33,13 +32,13 @@ include_once 'inc/ebikes_blockloader.php';
 include_once 'inc/ebikes_enqueuescripts.php';
 
 
-add_action('wp_enqueue_scripts', 'inject_coming_soon_page_assets');
+// add_action('wp_enqueue_scripts', 'inject_coming_soon_page_assets');
 
-function inject_coming_soon_page_assets(){
-	if( is_page( "coming-soon" )) {
-		wp_enqueue_style( 'coming-soon-css', get_stylesheet_directory_uri() . '/assets/css/coming-soon.css');
-	}
-}
+// function inject_coming_soon_page_assets(){
+// 	if( is_page( "coming-soon" )) {
+// 		wp_enqueue_style( 'coming-soon-css', get_stylesheet_directory_uri() . '/assets/css/coming-soon.css');
+// 	}
+// }
 
 
 /*

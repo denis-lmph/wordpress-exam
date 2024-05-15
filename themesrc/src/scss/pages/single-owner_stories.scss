@@ -1,0 +1,40 @@
+body.single-owner_stories {
+}
+
+/* ============== MEDIA QUERIES ============== */
+@media only screen and (min-width: 769px) {
+  body.single-owner_stories {
+    .content {
+        max-width: 800px;
+
+    }
+  }
+}
+@media only screen and (min-width: 992px) {
+  body.single-owner_stories {
+  }
+}
+@media only screen and (min-width: 1366px) {
+  body.single-owner_stories {
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  body.single-owner_stories {
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  body.single-owner_stories {
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body.single-owner_stories {
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body.single-owner_stories {
+  }
+}

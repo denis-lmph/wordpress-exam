@@ -111,7 +111,7 @@ function cpt_register_owner_stories() {
         "can_export" => false,
         "rewrite" => [ "slug" => "owner-stories", "with_front" => true ],
         "query_var" => true,
-        "supports" => [ "title", "editor", "thumbnail", "excerpt" ],
+		"supports" => [ "title", "editor", "thumbnail", "excerpt" ],
         "taxonomies" => [ "owner_story_category" ], // Custom Taxonomy
         "menu_icon" => "dashicons-businessman",
         "show_in_graphql" => false,
